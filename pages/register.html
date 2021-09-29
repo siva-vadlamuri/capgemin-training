@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+  </head>
+  <body>
+      <a href="/index.html">Home</a>
+    <h2>It is a Sign up Page</h2>
+    <form>
+      <div>
+        <label for="username">user name</label>
+        <input
+          type="text"
+          placeholder="Enter your username"
+          id="username"
+          minlength="3"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          id="email"
+          required
+        />
+      </div>
+      <div>
+        <input type="number" placeholder="Enter the Number" />
+      </div>
+      <input type="search" placeholder="Search For Products " />
+      <div>
+        <input type="radio" name="gender" /> <label>Male</label>
+        <input type="radio" name="gender" /> <label>Female</label>
+        <input type="radio" name="gender" /> <label>Others</label>
+      </div>
+      <div>
+        <!-- When user want to select muliple items -->
+        <label>Hobbies</label>
+        <input type="checkbox" /> <label>Sports</label>
+        <input type="checkbox" /> <label>Music</label>
+        <input type="checkbox" /> <label>Books</label>
+      </div>
+      <!-- Drop downs -->
+
+      <select>
+        <option value="">Select Your State</option>
+        <option value="AP">Andhra Pradesh</option>
+        <option value="KA">Karnataka</option>
+        <option value="TN">Tamil Nadu</option>
+        <option value="MP">Madhaya Pradesh</option>
+      </select>
+
+      <!--  -->
+      <div>
+        <label>Enter your Date Of Birth</label>
+        <input type="date" />
+      </div>
+      <div>
+        <label>Date And Time</label>
+        <input type="datetime-local" />
+      </div>
+      <div>
+          <label for="message">Message</label>
+        <textarea cols="30" rows="5"></textarea>
+      </div>
+      <div>
+        <input type="color" />
+      </div>
+
+      <div>
+        <input type="file" />
+      </div>
+      <label for="password">Password</label>
+      <input
+        type="password"
+        placeholder="Enter your password"
+        id="password"
+        maxlength="8"
+        required
+      />
+      <input type="checkbox" />
+      <span>Please Agree for terms and Conditions befor register with us</span>
+      <input type="submit" value="Sign up" />
+
+      <!-- <button type="button">Sign up</button> -->
+    </form>
+  </body>
+</html>
