@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction To CSS</title>
+    <style>
+      /* Tag selector */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* body {
+        background-color: cyan;
+      } */
+      h2 {
+        background-color: red;
+        color: white;
+      }
+      h3 {
+        background-color: green;
+        color: white;
+      }
+      /* id Selector */
+      #main__div {
+        background-color: blue;
+        color: white;
+        font-size: 2em;
+      }
+
+      /* How To Select a class */
+      .first__class {
+        width: 200px;
+        height: 200px;
+        background-color: #758283;
+        color: white;
+        border: 1px solid black;
+        padding: 10px 15px;
+        margin-top: 10px;
+      }
+      .first__class:hover{
+          background-color: #242B2E;
+      }
+      .second__class {
+        width: 50%;
+        /* height: 200px; */
+        /* background-color: hsla(62,100%,50%,1); */
+      }
+      .inner__div {
+        width: 100vw;
+        background-color: #ccc;
+        /* padding: 15px; */
+        height: 200px;
+        overflow-x: hidden;
+      }
+      .chid__div{
+          /* by default font-size: 16px */
+          margin-top: 10px;
+          font-size: 1rem;
+      }
+      [type="text"]{
+          background-color: grey;
+          margin-bottom: 15px;
+      }
+      [type="email"]:focus{
+          background-color: red;
+      }
+      /* p:first-child{
+          color : yellow
+      }
+      p:last-child{
+          color: green;
+      }
+      p:nth-child(3){
+          color : red;
+      } */
+      p:nth-child(2n+2){
+          color : blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, illo.
+      </h2>
+      <h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        quos maxime sapiente doloremque voluptas earum error enim doloribus quo
+        perspiciatis!
+      </h3>
+    </div>
+
+    <div id="main__div">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates,
+      voluptate excepturi optio voluptas iste pariatur eos qui libero deleniti
+      soluta similique dolorum temporibus voluptatibus incidunt odit sed ad non
+      sapiente minus cupiditate harum! Quisquam a corporis asperiores
+      praesentium molestiae excepturi officia quia adipisci vel laborum amet
+      optio nisi itaque incidunt, atque ad cumque. Explicabo, adipisci deserunt.
+      Error quos ab voluptate, consectetur nulla dolor quas ex repudiandae
+      officia voluptates rerum cumque quibusdam culpa magni laboriosam porro
+      voluptas mollitia aperiam illo officiis numquam sapiente. Doloribus,
+      obcaecati eum, voluptate aut suscipit vero, nostrum laudantium iure fuga
+      iste excepturi quo odio neque accusantium ducimus.
+      <div class="chid__div">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+        architecto quo consequatur, eius aut tempore incidunt ad porro illo in
+        magnam exercitationem non numquam facere officia, iste qui, sequi est.
+      </div>
+    </div>
+    <!-- <div class="first__class"></div> -->
+    <div class="first__class">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+      ratione a ea vel, aut consectetur odit repellat ad commodi sed placeat
+      maiores adipisci architecto esse non expedita ex. Harum, sed!
+    </div>
+    <div class="first__class"></div>
+    <div class="second__class">
+      <div class="inner__div"></div>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique recusandae magnam repellat tempore eius fuga autem rem officia aspernatur modi!</p>
+        <p>Sequi repudiandae, dolorum veniam asperiores cupiditate, tenetur autem reprehenderit laudantium consectetur ratione voluptates, accusamus laborum quis necessitatibus? Sequi, dolorum laudantium!</p>
+        <p>Quis facilis laboriosam totam ea beatae soluta, sequi dicta voluptatum odio, aliquam nobis quasi, blanditiis consequuntur laborum eos molestias perferendis!</p>
+        <p>Similique ipsa nisi provident eius mollitia, ut aspernatur. Laborum facere vero ex iste. Eius ea, voluptatibus dolorem quis nam eveniet.</p>
+        <p>Totam saepe incidunt ab facilis a. Ab voluptate commodi, accusamus quae cupiditate, iure nemo ratione laborum excepturi voluptates quasi saepe.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis possimus veritatis saepe quisquam eum! Cum ipsum praesentium eos placeat soluta iste expedita, voluptate, alias non nostrum animi odio commodi unde.</p>
+    </div>
+
+    <form>
+        <input type="text" >
+        <input type="email" >
+    </form>
+
+    
+  </body>
+</html>

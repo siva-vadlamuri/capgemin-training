@@ -9,7 +9,7 @@
   <body>
       <a href="/index.html">Home</a>
     <h2>It is a Sign up Page</h2>
-    <form>
+    <form autocomplete="off" novalidate>
       <div>
         <label for="username">user name</label>
         <input
@@ -18,6 +18,8 @@
           id="username"
           minlength="3"
           required
+          autocomplete="off"
+          autofocus
         />
       </div>
       <div>
@@ -70,6 +72,9 @@
       </div>
       <div>
         <input type="color" />
+      </div>
+      <div>
+          <input type="range" min="1" max="100" step="10">
       </div>
 
       <div>
