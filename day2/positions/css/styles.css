@@ -1,0 +1,39 @@
+body {
+  height: 200vh;
+}
+.parent {
+  padding: 0.5rem;
+  background-color: aqua;
+  /* position: absolute; */
+}
+.parent div {
+  padding: 0.5rem;
+}
+.child1 {
+  background-color: tomato;
+  /* position: absolute; */
+  /* top: 10px; */
+}
+.child2 {
+  background-color: lightgreen;
+  position: relative;
+  /* top: 50vh; */
+}
+.child3 {
+  background-color: lightgray;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* position: fixed; */
+}
+.child4 {
+  background-color: orange;
+  position: sticky;
+  /* Relative + Fixed */
+  top: 50px;
+}
+.btn {
+  position: absolute;
+  right: 0px;
+}

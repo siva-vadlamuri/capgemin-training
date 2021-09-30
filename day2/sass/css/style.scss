@@ -1,0 +1,19 @@
+// Declaring Variables in SASS
+// $primaryColor: "#5ad";
+@import "variables";
+$fontSizes: (
+  primaryFont: 1rem,
+  secondartFont: 0.5rem,
+);
+body {
+  background-color: map-get($colors, primary);
+}
+header.header {
+  section {
+    ul.navbar {
+      li {
+        list-style: none;
+      }
+    }
+  }
+}

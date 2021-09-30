@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.btn {
+  margin-top: 20px;
+  background-color: #5ad;
+  padding: 0.7rem 1.5rem;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  transform: rotate(90deg);
+  position: absolute;
+  right: 0;
+  top: 40vh;
+  cursor: pointer;
+}
+.box {
+  height: 200px;
+  width: 400px;
+  background-color: purple;
+  color: #fff;
+  padding: 20px 10px;
+  font-size: 18px;
+  margin: 10px;
+  /* transform: translatey(50%); */
+  transform: translate(50%, 50%);
+}
+.box2 {
+  height: 200px;
+  width: 200px;
+  background-color: #5ad;
+  margin: auto;
+  margin-top: 20%;
+}
+.box2:hover {
+  transform: scale(1.5);
+}

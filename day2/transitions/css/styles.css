@@ -1,0 +1,14 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: purple;
+  color: #fff;
+  margin: auto;
+  margin-top: 20%;
+  /* property name transition-duration tranistion-time-function transition-delay */
+  transition: transform 1s linear;
+}
+.box:hover {
+  /* width: 500px; */
+  transform: scale(1.5);
+}

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+}
+.header {
+  background-color: #242b2e;
+  height: 15vh;
+  padding: 0px 16px;
+  color: #fff;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+}
+li {
+  list-style: none;
+  padding: 0px 15px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 70vh;
+}
+/* Extra Small Mobiles --> 320px */
+/* Large Mobile 425px */
+/* table 768px */
+/* laptops :1024px  */
+/* Large Laptops : 1440px */
+/* min-width : 768 --->  */
+/* 768px table */
+/* 0 --> 768px i want to hide the navigation */
+/* min-width 769px ---> 2000px */
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .menu {
+    display: none;
+  }
+}
