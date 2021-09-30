@@ -1,0 +1,52 @@
+body {
+  background-color: #ccc;
+  color: #fff;
+}
+
+.parent__div {
+  color: #fff;
+  border: 1px solid black;
+}
+.child__div {
+  color: initial;
+  border: inherit;
+}
+div {
+  background-color: purple;
+  display: inline;
+}
+span {
+  display: inline-block;
+  background-color: green;
+  width: 200px;
+}
+p {
+  background-color: orange;
+}
+/* 0 1 0 0 */
+/* #section__title {
+  background-color: pink;
+} */
+/* 0 0 0 1 */
+h2 {
+  background-color: #ff0000;
+}
+/* 0 0 0 1 */
+
+/* 1 0 0 1 */
+h2 {
+  background-color: black !important;
+  color: #fff;
+}
+h2 {
+  background-color: yellow;
+}
+/* 0 0 1 0 */
+/* .main__title {
+  background-color: blue;
+} */
+
+/* tag --> 1 */
+/* class --> 10 */
+/* id--> 100 */
+/* !important 1000 */

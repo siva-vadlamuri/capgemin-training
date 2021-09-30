@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  background-color: #ccc;
+  border-radius: 10px;
+  width: 60%;
+  padding: 12px;
+  margin: auto;
+  margin-top: 25px;
+}
+[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 8px 0px;
+  border-radius: 5px;
+}
+[type="text"]:focus {
+  background-color: #c1c1c1;
+}
+.btn {
+  background-color: #5ad;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
