@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- <ul class="nav  nav-tabs justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+    </ul> -->
+
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#myNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            class="d-block w-100"
+            height="500"
+            alt="firstImage"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://therichpost.com/wp-content/uploads/2020/08/Reactjs-create-and-include-hedar-footer-files.png"
+            class="d-block w-100"
+            height="500"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="data:image/png;base64,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"
+            class="d-block w-100"
+            height="500"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <form class="m-5">
+        <div class="mb-3">
+          <label for="emailId" class="form-label">Email address</label>
+          <input type="email" value="example@gmail.com" readonly  class="form-control" id="emailId" >
+        
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="checkbox1">
+          <label class="form-check-label" for="checkbox1">Check me out</label>
+        </div>
+        <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+      </form>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="mydropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="mydropdown">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+
+      <!-- Example split danger button -->
+<div class="btn-group">
+    <button type="button" class="btn btn-primary btn-lg">Action</button>
+    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Open The Modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

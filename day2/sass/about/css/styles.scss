@@ -1,0 +1,38 @@
+@import "mixins";
+@import "btn";
+
+html {
+  height: 100vh;
+  @include backgroundImage(
+    "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80"
+  );
+}
+body {
+  section {
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #fff;
+    }
+    p {
+      color: #fff;
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+
+  .btn__contact {
+    @extend .btn;
+    background-color: red !important;
+    transform: rotate(90deg);
+    position: absolute;
+    left: -63px;
+    top: 50vh;
+  }
+  .btn__enroll {
+    @extend .btn;
+    background-color: #5ad;
+    display: block;
+    margin: auto;
+  }
+}

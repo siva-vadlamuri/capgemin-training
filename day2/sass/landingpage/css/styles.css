@@ -1,0 +1,53 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+html body {
+  background-color: #5ad;
+  margin: 0;
+}
+
+html header a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-align: center;
+  display: block;
+  color: #fff;
+  padding-top: 0.5rem;
+}
+
+html div.container {
+  -webkit-clip-path: polygon(50% 0%, 100% 7%, 100% 87%, 50% 100%, 0 98%, 0 1%);
+  clip-path: polygon(50% 0%, 100% 7%, 100% 87%, 50% 100%, 0 98%, 0 1%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+html section#main__section {
+  background-color: #12b0e8;
+  padding: 25px;
+  margin: 1rem auto;
+  width: 80%;
+  border: 1px solid black;
+  z-index: 2;
+}
+
+html section#main__section img {
+  width: 100%;
+}
+
+html button.btn {
+  background-color: #e21717;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: -0.7rem auto;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=styles.css.map */

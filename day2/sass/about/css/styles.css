@@ -1,0 +1,44 @@
+.btn, body .btn__contact, body .btn__enroll {
+  padding: 0.5rem 1.7rem;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+}
+
+html {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+body section p {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+body .btn__contact {
+  background-color: red !important;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  left: -63px;
+  top: 50vh;
+}
+
+body .btn__enroll {
+  background-color: #5ad;
+  display: block;
+  margin: auto;
+}
+/*# sourceMappingURL=styles.css.map */
