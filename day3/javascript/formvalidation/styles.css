@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.form__div {
+  width: 80%;
+  margin: auto;
+}
+input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.register__title {
+  text-align: center;
+  margin: auto;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  background-color: #5ad;
+  color: #fff;
+  display: block;
+  margin: auto;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.text_danger {
+  color: red;
+  font-weight: bolder;
+}
