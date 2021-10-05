@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async-AWAIT</title>
+    <script defer src="./async-await.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .form__div{
+            width: 60%;
+            padding: 1.4rem;
+            background-color: #758283;
+            margin: 1rem auto;
+           
+        } 
+
+        input{
+            width: 100%;
+            padding: .5rem;
+            margin: .5rem 0;
+            outline: none;
+        }
+        .btn{
+            background-color: #5ad;
+            border: none;
+            padding: .5rem 1.4rem;
+            color: #fff;
+            border-radius: .5rem;
+            display: block;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        #response_text{
+            color: green;
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form__div">
+    <form>
+        <input type="text" name="username" id="username" placeholder="Enter your User Name"/>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email"/>
+        <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number">
+        <input type="password" name="password" id="password" placeholder="Enter Your Password">
+        <button class="btn">Sign Up</button>
+    </form>
+</div>
+<div>
+    <p id="response_text"></p>
+</div>
+
+</body>
+</html>

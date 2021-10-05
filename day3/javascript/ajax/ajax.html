@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <script defer src="./ajax.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .header,.footer{
+            background-color: #242B2E;
+            color: #fff;
+        }
+        .header{
+
+            padding: 0 .8rem;
+            justify-content: space-between;
+            align-items: center;
+            height: 15vh;
+            font-size: 1.3rem;
+        }
+        .nav__item{
+            list-style: none;
+            padding: 0 .7rem;
+            cursor: pointer;
+        }
+        .footer{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+           
+        }
+        .footer h2{
+            text-align: center;
+        }
+
+        /* Contact Page CSS */
+
+        * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.form__div {
+  width: 80%;
+  margin: auto;
+}
+input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.register__title {
+  text-align: center;
+  margin: auto;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  background-color: #5ad;
+  color: #fff;
+  display: block;
+  margin: auto;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.text_danger {
+  color: red;
+  font-weight: bolder;
+}
+
+
+        /* Contact Page CSS Ends Here */
+
+        /* Table Content CSS Goes Here */
+
+        table{
+            /* display: flex; */
+            margin-left: 3rem;
+            
+            /* justify-content: center; */
+           
+            margin-top: 2rem;
+
+        }
+        table,th,tr,td{
+            border: 1px solid black;
+        }
+        td{
+            padding: .8rem;
+        }
+
+        /* Table Content CSS End Here */
+    </style>
+</head>
+<body>
+    <header class="header d-flex">
+        <div class="logo">Logo</div>
+        <nav class="navbar">
+            <ul class="nav__items d-flex">
+                <li class="nav__item" id="home">Home</li>
+                <li class="nav__item" id="about">About</li>
+                <li class="nav__item" id="contact">Contact</li>
+                <li  class="nav__item" id="getData">Get Data</li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main__content"></main>
+
+
+    <footer class="footer">
+        <h2>Footer</h2>
+    </footer>
+    
+</body>
+</html>
