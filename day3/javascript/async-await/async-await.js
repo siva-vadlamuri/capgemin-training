@@ -19,9 +19,12 @@ const sendTheDataToServer = async(userObj)=>{
     body: JSON.stringify(userObj)
     
 })
-const data = await response.text();
-// console.log(data);
-response_text.innerText = data;
+const data = await response.json();
+console.log(data);
+response_text.innerText = data.message;
+if(!data.success){
+    response_text.className = "text__danger";
+}
 username.value = "";
 password.value = ""
 phone.value = ""

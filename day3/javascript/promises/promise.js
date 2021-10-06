@@ -5,7 +5,7 @@ const p = new Promise((resolve,reject)=>{
 })
 
 p.then((value)=>{
-    console.log(value);
+    // console.log(value);
 })
 .catch((err)=>console.log('Error Message ' +err))
 
@@ -16,9 +16,9 @@ fetch('https://fakestoreapi.com/products/').
 then((value)=>{
     console.log(value);
     value.json()
-    .then((data)=>console.log(data))
+    // .then((data)=>console.log(data))
 })
-.catch((err)=>console.log(err))
+// .catch((err)=>console.log(err))
 
 
 // JSON.parse 
@@ -60,6 +60,37 @@ const users2 = {
     phone: 7777777
 }
 
-console.log(JSON.stringify(users2));
+// console.log(JSON.stringify(users2));
 
 // console.log(users)
+
+const firstPromise = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve('First Promise');
+    },10000)
+})
+
+const secondPromise = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve('Second Promise')
+    },5000)
+})
+const thirdPromise = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve('Third Promise is rejected')
+    },4000)
+})
+
+// first promise --> CSS
+// second JavaScript File --> JS
+// third Promise --> API
+
+Promise.race([firstPromise,secondPromise,thirdPromise]).then((value)=>{
+    console.log(value);
+})
+Promise.allSettled([firstPromise,secondPromise,thirdPromise]).then((value)=>{
+    console.log(value);
+})
+Promise.all([firstPromise,secondPromise,thirdPromise]).then((value)=>{
+    console.log(value);
+})
